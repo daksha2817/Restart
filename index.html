@@ -65,7 +65,7 @@
       color: var(--chocolate-brown);
     }
 
-    /* Ambient Romantic Background Glows */
+    /* Ambient Background Glows */
     .ambient-bg {
       position: fixed;
       inset: 0;
@@ -191,6 +191,17 @@
       background: var(--primary-orange);
       color: #fff;
       transform: translateY(-2px);
+    }
+
+    .btn-insta {
+      background: linear-gradient(135deg, #C56A32 0%, #D84315 50%, #8A3B14 100%);
+      color: #fff !important;
+      box-shadow: 0 10px 25px rgba(197, 106, 50, 0.35);
+    }
+
+    .btn-insta:hover {
+      transform: translateY(-3px) scale(1.04);
+      box-shadow: 0 16px 35px rgba(197, 106, 50, 0.5);
     }
 
     section {
@@ -1259,6 +1270,23 @@
       to { opacity: 1; transform: translateY(0); }
     }
 
+    /* Dedicated Instagram Card inside Proposal area */
+    .insta-connect-box {
+      margin-top: 45px;
+      padding-top: 30px;
+      border-top: 1px dashed rgba(197, 106, 50, 0.3);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .insta-connect-text {
+      font-size: 1.05rem;
+      color: var(--chocolate-brown);
+      font-weight: 500;
+    }
+
     /* Celebration Modal */
     #celebration-overlay {
       position: fixed;
@@ -1276,7 +1304,7 @@
       background: #fff;
       border: 3px solid var(--primary-orange);
       border-radius: 32px;
-      padding: 50px 36px;
+      padding: 48px 34px;
       max-width: 650px;
       width: 100%;
       text-align: center;
@@ -1306,7 +1334,7 @@
     .celebration-modal p {
       font-size: 1.15rem;
       color: var(--chocolate-brown);
-      margin-bottom: 24px;
+      margin-bottom: 20px;
       line-height: 1.7;
     }
 
@@ -1321,6 +1349,11 @@
       border-radius: 50px;
       box-shadow: 0 6px 20px rgba(197, 106, 50, 0.3);
       margin-top: 10px;
+      margin-bottom: 24px;
+    }
+
+    .celebration-insta-link {
+      margin-top: 8px;
     }
 
     .close-celebration {
@@ -1363,9 +1396,30 @@
 
     .footer-message {
       max-width: 550px;
-      margin: 0 auto 30px;
+      margin: 0 auto 20px;
       font-size: 0.95rem;
       color: #d1b4a1;
+    }
+
+    .footer-insta-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: #fff;
+      background: rgba(255, 255, 255, 0.12);
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      padding: 8px 20px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-size: 0.9rem;
+      margin-bottom: 24px;
+      transition: var(--transition);
+    }
+
+    .footer-insta-btn:hover {
+      background: var(--primary-orange);
+      border-color: var(--primary-orange);
+      transform: translateY(-2px);
     }
 
     .footer-hearts {
@@ -1923,6 +1977,16 @@
         <div class="playful-notice" id="playful-notice">
           Are you sure, Dakshuuuu? 🥺 I still have one little question for you...
         </div>
+
+        <!-- Follow on Instagram Section -->
+        <div class="insta-connect-box">
+          <p class="insta-connect-text">
+            Stay Connected & Restart Our Story on Instagram ✨
+          </p>
+          <a href="https://www.instagram.com/daksha_2817?vrfl=czRscXk3enZsNHYy" target="_blank" rel="noopener noreferrer" class="btn btn-insta">
+            <i class="fa-brands fa-instagram"></i> Follow Dakshuuuu (@daksha_2817) ❤️
+          </a>
+        </div>
       </div>
     </div>
   </section>
@@ -1946,6 +2010,12 @@
       <div class="restart-tagline">
         OUR RESTART BEGINS HERE ✨
       </div>
+
+      <div class="celebration-insta-link">
+        <a href="https://www.instagram.com/daksha_2817?vrfl=czRscXk3enZsNHYy" target="_blank" rel="noopener noreferrer" class="btn btn-insta">
+          <i class="fa-brands fa-instagram"></i> Follow Dakshuuuu on Instagram (@daksha_2817) 💖
+        </a>
+      </div>
     </div>
   </div>
 
@@ -1958,8 +2028,15 @@
       <p class="footer-message">
         "Because some stories are too precious to be left half-written. Especially ours, Dakshuuuu."
       </p>
+      
+      <div>
+        <a href="https://www.instagram.com/daksha_2817?vrfl=czRscXk3enZsNHYy" target="_blank" rel="noopener noreferrer" class="footer-insta-btn">
+          <i class="fa-brands fa-instagram"></i> @daksha_2817
+        </a>
+      </div>
+
       <div class="footer-hearts">
-        ❤️ 🌻 ✨ 🧸 💌
+        ❤️ 🌻 🤎🧡 🧸 💌
       </div>
       <div class="footer-copyright">
         Made with every beat of my heart &bull; Forever Yours
@@ -1973,7 +2050,7 @@
   </button>
 
   <!-- ==========================================================
-       JAVASCRIPT (Completely Error-Free)
+       JAVASCRIPT
        ========================================================== -->
   <script>
     const DRIVE_LINK = "https://drive.google.com/drive/folders/1Ybhxph4z8oUW_I3jpEYUjHAL5-7Mc5ss?usp=sharing";
